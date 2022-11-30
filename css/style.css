@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+body{
+	font-family:"Play", serif;
+	font-style: normal;
+	font-size: 1.25rem;
+	color: #2f3e46;
+	background-color: #f9c74f;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-top: 60px;
+	margin-bottom: 30px;
+}
+[class$="__title"]{
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 1em;
+	text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd, 2px 2px 2px rgba(206,89,55,0);
+}
+.exersice{
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+article{
+	box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+	background-color: #98f5e1;
+	border-radius: 5px;
+	padding:10px 0 20px 10px;
+}
+[class$="__link"]{
+	font-size: 1.5rem;
+	font-weight: 700;
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+[class$="__link"]:hover{
+	color:crimson;
+}
+[class$="__item"] span {
+	color: red;
+}
+[class$="__item"]:not(:last-child){
+	margin-bottom: 10px;
+}
+[class$="__item"]{
+	position: relative;
+	padding-left: 24px;
+}
+[class$="__item"]::before{
+	content: "";
+	background: url(../icon.png) center no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	margin-left: -24px;
+}

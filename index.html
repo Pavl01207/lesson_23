@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="js.png">
+	<title>Lesson 23</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__container">
+				<h1 class="page__title">HomeWork JavaScript</h1>
+				<section class="exersice">
+					<article class="exersice__one one">
+						<a href="https://www.youtube.com/watch?v=oSO_StIWaXM" class="one__link" target="_blank">Операторы JAVASCRIPT. "2"+2=22. Уроки JAVASCRIPT с нуля 2020</a>
+						<ul class="one__list">
+							<li class="one__item">Невірний <span>Варіант№1</span>,адже '35' та "22" є тип даних: <mark>string</mark>.Результат в консолі: 35-22</li>
+							<li class="one__item">Невірний <span>Варіант№3</span>,так як <mark>інкремент</mark> працює тільки зі змінною.</li>
+							<li class="one__item">Невірний <span>Варіант№4</span>,тому що виведеться спочатку саме значення змінної,і тільки потім виконається інкремент,так як запис 
+							є <mark>постсуфіксний</mark>.</li>
+							<li class="one__item">Невірний <span>Варіант№5</span>,адже виконається умова із логічними операторами і результат виведеться <mark>11</mark>.</li>
+						</ul>
+					</article>
+					<!--=============================-->
+					<article class="exersice__two two">
+						<a href="https://www.youtube.com/watch?v=tiHvPGOX5yc" class="two__link" target="_blank">Числа в JAVASCRIPT. Тип данных number. Работа с числами. проблема неточных вычислений.</a>
+						<ul class="two__list">
+							<li class="two__item">Невірна <span>Задача№1</span>,так як коректного виконання потрібно використати <mark>Number.EPSILON</mark>.<br>
+								let numUno = 1.005 + Number.EPSILON;<br>
+								let numTwo = Math.round(numUno * 100) / 100;<br>
+								console.log(numTwo);
+							</li>
+							<li class="two__item"><span>Задача№2</span>,потрібно скористатись <mark>parseFloat</mark>.<br>
+								let value = "135.58px";<br>
+								console.log(parseFloat(value));
+							</li>
+							<li class="two__item"><span>Задача№3</span>:потрібно скористатись <mark>isNaN</mark>.<br>
+								let valueOne = 58 + `Pavlo`;<br>
+								if (isNaN(valueOne)){<br>
+								console.log(`Result is NaN`);};
+							</li>
+							<li class="two__item"><span>Задача№4</span>:використовуємо <mark>Math.max</mark>.<br>
+								console.log(Math.max(10,58,39,-150,0));
+							</li>
+							<li class="two__item"><span>Задача№5</span>:використовуємо <mark>Math.floor</mark>.<br>
+								let someNumber = 58.858;<br>
+								console.log(Math.floor(someNumber));
+							</li>
+						</ul>
+					</article>
+					<!--=============================-->
+					<article class="exersice__three three">
+						<a href="https://www.youtube.com/watch?v=jc5Upe8xIN0&t=1s" class="three__link" target="_blank">Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.</a>
+						<ul class="three__list">
+							<li class="three__item">Невірна <span>Задача№1</span>,так як для виведення даного поєднання змінна text повинна бути в зворотніх кавичках<mark>``</mark>.</li>
+							<li class="three__item"><span>Задача№2</span>:потрібно скористатись масивом<mark>[ ]</mark>.<br>
+								let text = 'фрилансер';<br>
+								console.log(text[5]);
+							</li>
+							<li class="three__item">Невірна <span>Задача№3</span>,тому що оператор додавання не переводить тип даних в число,і результат буде <mark>123456</mark>.</li>
+							<li class="three__item"><span>Задача№4</span>:використовуємо <mark>toUpperCase</mark>.<br>
+								console.log(text.toUpperCase());
+							</li>
+							<li class="three__item"><span>Задача№5</span>:потрібно використати <mark>slice</mark>.<br>
+								console.log(text.slice(3,6));
+							</li>
+							<li class="three__item"><span>Задача№6</span>:потрібно використати <mark>includes</mark>.Результат буде <mark>false</mark>.<br>
+								console.log(text.includes('лан',4));
+							</li>
+						</ul>
+					</article>
+					<!--=============================-->
+					<article class="exersice__four four">
+						<a href="https://www.youtube.com/watch?v=tFyRhDZgHaU" class="four__link" target="_blank">IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE. Уроки JAVASCRIPT с нуля 2020</a>
+						<ul class="four__list">
+							<li class="four__item"><span>Задача№1</span>:результат<mark>Ложь</mark>,оскільки використовується строге порівняння string та number,
+							результатом чого є false.</li>
+							<li class="four__item"><span>Задача№2</span>:результат <mark>Истина</mark>,так як не строге порівняння зводить значення до одного типу та порівнює їх.</li>
+							<li class="four__item"><span>Задача№3</span>:результат <mark>Истина</mark>.</li>
+							<li class="four__item"><span>Задача№4</span>:результат <mark>Истина</mark>,так як в першій умові 0 поверне false і виконається друга умова,де в рядку присутній пробіл і поверне true.
+							</li>
+						</ul>
+					</article>
+					<!--=============================-->
+					<article class="exersice__five five">
+						<a href="https://www.youtube.com/watch?v=QjDzp-yM_To" class="five__link" target="_blank">Циклы FOR и WHILE в JavaScript. Директивы break и continue. Уроки JAVASCRIPT с нуля 2020</a>
+						<ul class="five__list">
+							<li class="five__item"><span>Задача№1</span><br>
+								let num = 1;<br>
+								while (num < 6) {<br>
+									console.log(num);<br>
+									++num;<br>
+								}
+							</li>
+							<li class="five__item">Невірна <span>Задача№2</span>,оскільки 0 дасть <mark>false</mark> і цикл зупинеться на 1.</li>
+							<li class="five__item"><span>Задача№3</span><br>
+								let numbe = 0;<br>
+								while (numbe < 3) {<br>
+									console.log(`Число: ${numbe}`);<br>
+									numbe++;<br>
+								}
+								</li>
+							<li class="five__item"><span>Задача№4</span><br>
+								firstFor: for (let numberFirst = 0; numberFirst < 2; numberFirst++){<br>
+									for (let size = 0; size < 3; size++){<br>
+										if (size == 1){<br>
+											break firstFor;<br>
+										}<br>
+										console.log(size);<br>
+									}<br>
+								}
+							</li>
+						</ul>
+					</article>
+				</section>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="javascript/script.js">
+	</script>
+</body>
+</html>
